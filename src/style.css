@@ -249,5 +249,5 @@ header .content {
 }
 section {
   height: 100vh;
-  background:linear-gradient(to right, rgb(38, 0, 73),rgb(33, 0, 59));
+  background:rgb(227, 244, 255);
 }
