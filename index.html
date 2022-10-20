@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Indomitech</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+		integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+		crossorigin="anonymous"></script>
+    <script src="./src/app.js" defer></script>
+    <link rel="shortcut icon" href="./src/img/fav.png" type="image/x-icon">
+</head>
+<body>
+  <div class="hero">
+    <div class="down up-down-an">
+      <a href="#services" class="down-btn"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <header id="header">
+     <nav class="nav">
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="" width="80px">
+            <span class="logo-text">Indomi<span class="heighlight">tech</span></span>
+        </div>
+        <div class="nav-toggler d-none">
+          <button class="nav-toggler-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="menu">
+          <ul class="nav-links">
+            <li class="nav-item"><a class="nav-link" href="#header">Indomitech</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">What we do</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Study</a></li>
+          </ul>
+        </div>
+     </nav>
+     <div class="content">
+      <div class="header-content-text">
+        <h1> <span class=""></span>Building the Future with<br><span class="heighlight-text service-txt">Tech & Software.</span></h1>
+       <div class="qoute">
+        <p class="msg">
+          “Innovation is taking two things that exist and putting them together in a new way.“</p>
+          <p class="author">
+            - Tom Freston
+          </p>
+       </div>
+      </div>
+      <div class="header-content-side">
+        <div class="image">
+          <img src="./src/img/header_img.png" width="100%" alt="">
+        </div>
+      </div>
+     </div>
+    </header>
+    <video autoplay loop muted plays-inline class="header-vid">
+        <source src="./src/video/video_2.mp4">
+    </video>
+  </div>
+
+
+  <section id="services">
+
+  </section>
+  <script>
+		var typing = new Typed(".service-txt", {
+			strings: ["", "Web Development.", "App Development.", "Graphics Designing.", "Freelance Work.", "Video Editing."],
+      startDelay:3000,
+			typeSpeed: 60,
+			backDelay: 2000,
+			backSpeed: 60,
+			loop: true,
+		});
+	</script>
+</body>
+</html>
