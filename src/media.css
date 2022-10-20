@@ -72,4 +72,10 @@
         background-color: var(--light);
         cursor: pointer;
     }
+    header .content{
+        margin: 1vh auto 0px auto;
+    }
+    .nav-links.scroll-active.mob-active{
+        border-radius: 0 0 10px 10px;
+    }
 }
