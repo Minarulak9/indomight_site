@@ -1,5 +1,5 @@
 :root {
-    --light: #edffec;
+    --light: #d1d1d1;
     --white: #ffffff;
     --dark-green: #00100b;
     --orange: #f75c03;
@@ -22,7 +22,7 @@
         width: 180px;
         height: auto;
         position: absolute;
-        top: 12vh;
+        top: 9vh;
         right: 0;
         align-items: initial;
         justify-content: initial;
@@ -78,4 +78,17 @@
     .nav-links.scroll-active.mob-active{
         border-radius: 0 0 10px 10px;
     }
+    .row{
+        flex-direction: column;
+    }
+    .service-para{
+        width: 100%;
+    }
+    .service-web-text{
+        width: 100%;
+    }
+    .left-side{
+        order: 2;
+    }
+    
 }

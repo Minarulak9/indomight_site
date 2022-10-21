@@ -23,7 +23,10 @@ const navObserver = new IntersectionObserver((entries, observer) => {
         nav.classList.add('scroll-active')
         navLinks.classList.add('scroll-active')
     }
-    console.log(entry);
   });
 }, options);
 navObserver.observe(header)
+
+
+// aos animation
+AOS.init();
