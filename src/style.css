@@ -77,8 +77,8 @@ header {
   z-index: 2;
   background: linear-gradient(
     to right,
-    rgba(27, 0, 39, 0.548),
-    rgba(187, 0, 125, 0.26)
+    rgba(0, 0, 0, 0.192),
+    rgba(0, 0, 0, 0.418)
   );
 }
 nav {
