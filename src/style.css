@@ -23,7 +23,7 @@ font-family: 'Ubuntu', sans-serif;
 
 /* variables */
 :root {
-  --light: #cecece;
+  --light: #f0f0f0;
   --white: #ffffff;
   --dark-green: #00100b;
   --orange: #f75c03;
@@ -177,16 +177,15 @@ nav .logo img {
 header .content {
   width: 90%;
   margin: 12vh auto 0px auto;
-  /* margin: auto; */
+  padding-left:2rem ;
   height: 75vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
 }
 .content .header-content-text {
   flex: 3;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .content .header-content-side {
@@ -213,7 +212,7 @@ header .content {
   /* z-index: 1; */
 }
 .qoute {
-  margin: 1rem auto;
+  margin: 1rem;
   border-top: 2px solid var(--orange);
   font-size: 1.3rem;
   width: 60%;
@@ -262,11 +261,73 @@ header .content {
 .scroll-active {
   background-color: var(--dark-green) !important;
 }
+
+section{
+  padding: 2rem;
+}
+.about-heading{
+  color: var(--white) !important;
+}
+#about-us{
+  background: linear-gradient(45deg, #ffffff 35%, #4a00e0 20%);
+  color: white;
+  position: relative;
+  z-index: -1;
+}
+.about-content{
+  padding: 3rem 0;
+}
+.hightlight{
+  color: var(--green);
+}
+.who-we-are{
+ display: flex;
+ gap: 4rem;
+}
+.who-we-are .img img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px -6px black;
+}
+.who-details .who-heading{
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.who-details .heading-s{
+  padding: 8px;
+  border: 2px solid var(--green);
+}
+.who-details .heading-s, .who-details .para{
+  max-width: 650px;
+}
+.know-more{
+  text-align: right;
+}
+.know-more a{
+  text-decoration: none;
+  color: var(--orange);
+  padding: 8px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  justify-content: space-between;
+}
+.who-details{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 #services {
   position: relative;
   min-height: 100vh;
   background: linear-gradient(rgb(238, 238, 238), rgb(186, 242, 255));
   z-index: 1;
+  overflow-x: hidden;
 }
 #services::after {
   content: '';
