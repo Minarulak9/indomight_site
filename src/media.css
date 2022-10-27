@@ -90,5 +90,21 @@
     .left-side{
         order: 2;
     }
+    .service-content{
+        padding: 0;
+    }
+    section{
+        padding: 1rem;
+    }
+    .who-we-are .img{
+        display: none;
+    }
+    .who-we-are .who-details{
+        align-items: center;
+        width: 100%;
+    }
+    #about-us{
+        background: linear-gradient(to right, #384cff , #4a00e0 );
+    }
     
 }
