@@ -329,6 +329,9 @@ section {
   z-index: 1;
   overflow-x: hidden;
 }
+#home-services {
+  background: linear-gradient(rgb(238, 238, 238), rgb(186, 242, 255));
+}
 #services::after {
   content: "";
   position: absolute;
@@ -470,7 +473,7 @@ section {
 }
 .all_services .box {
   width: 260px;
-  min-height: 100px;
+  min-height: 90px;
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 0px 0px 30px -15px;
@@ -496,7 +499,7 @@ section {
   transition: 0.15s;
 }
 .all_services .box .img img:hover {
-  transform: scale(2);
+  transform: scale(1.3);
   transition: 0.4s;
 }
 .all_services .box .service-name {
@@ -508,10 +511,10 @@ section {
 
 /* career */
 
-#career{
+#career {
   background-color: #f3fffc;
 }
-.career-content{
+.career-content {
   margin-top: 1rem;
 }
 .all_jobs {
@@ -539,7 +542,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height:calc(100% - 230px);
+  height: calc(100% - 230px);
 }
 .all_jobs .box .img {
   /* flex:3; */
@@ -599,4 +602,30 @@ section {
   font-size: 1.1rem;
   border-radius: 5px;
   color: var(--light);
+}
+
+#contact-us {
+  background: linear-gradient(70deg, #4a00e0 60%, #bbf2ff 10%);
+  height:95vh;
+  padding: .5rem 1rem;
+  overflow: hidden;
+}
+.contact-content{
+  padding: 1rem;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+.contact-image{
+  flex: 1;
+}
+.contact-image img{
+  width: 100%;
+  height: 100%;
+}
+.contact-form{
+  flex: 1;
+  height: 100%;
+  border: 2px solid #bbf2ff;
 }
