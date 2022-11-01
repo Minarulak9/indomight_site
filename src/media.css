@@ -106,5 +106,19 @@
     #about-us{
         background: linear-gradient(to right, #384cff , #4a00e0 );
     }
+    .know-more a{
+        width: 200px;
+        gap: 10px;
+        text-align: center;
+    }
+    .top-nav .right{
+        display: none;
+    }
+    #contact-us{
+        background: linear-gradient(to right, #384cff , #4a00e0 );
+    }
+    .contact-image{
+        display: none;
+    }
     
 }

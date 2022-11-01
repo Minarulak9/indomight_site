@@ -29,4 +29,9 @@ navObserver.observe(header)
 
 
 // aos animation
-AOS.init();
+try {
+  AOS.init()
+  
+} catch (error) {
+  
+}
