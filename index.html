@@ -16,6 +16,7 @@
     integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
     crossorigin="anonymous"></script>
   <script src="./src/app.js" defer></script>
+  <script src="./src/slider.js" defer></script>
   <link rel="shortcut icon" href="./src/img/fav.png" type="image/x-icon">
 </head>
 
@@ -188,7 +189,29 @@
   </section>
 
 
-  <section id="testimonials"></section>
+  <section id="testimonials">
+    <h2 class="testi-heading">What We <span class="hightlight"> Have Done</span> </h2>
+    <div id="slider">
+      <ul id="slideWrap"> 
+        <li>
+            <div class="img"><img src="./src/img/barish.png" alt=""></div>
+            <div class="details">
+              <h2 class="titile">The loan distributed Android and Web Application</h2>
+              <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio debitis incidunt cupiditate vel, atque officia aliquid odio reprehenderit, sequi minima, expedita tempora voluptatem facilis iure earum amet id corrupti ducimus!</div>
+            </div>
+        </li>
+        <li>
+            <div class="img"><img src="./src/img/spa.png" alt=""></div>
+            <div class="details">
+              <h2 class="titile">The Salon management Android and Web Application</h2>
+              <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio debitis incidunt cupiditate vel, atque officia aliquid odio reprehenderit, sequi minima, expedita tempora voluptatem facilis iure earum amet id corrupti ducimus!</div>
+            </div>
+        </li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+    <a id="next" href="#">&#8811;</a>
+    </div>
+  </section>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     var typing = new Typed(".service-txt", {

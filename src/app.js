@@ -12,26 +12,22 @@ notificationToggler.addEventListener("click", () => {
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.90,
+  threshold: 0.9,
 };
 const navObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting && entry.intersectionRatio < 1) {
-        nav.classList.remove('scroll-active')
-        navLinks.classList.remove('scroll-active')
-    }else if(!entry.isIntersecting){
-        nav.classList.add('scroll-active')
-        navLinks.classList.add('scroll-active')
+      nav.classList.remove("scroll-active");
+      navLinks.classList.remove("scroll-active");
+    } else if (!entry.isIntersecting) {
+      nav.classList.add("scroll-active");
+      navLinks.classList.add("scroll-active");
     }
   });
 }, options);
-navObserver.observe(header)
-
+navObserver.observe(header);
 
 // aos animation
 try {
-  AOS.init()
-  
-} catch (error) {
-  
-}
+  AOS.init();
+} catch (error) {}
