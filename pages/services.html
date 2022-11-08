@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Indomitech-Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../src/style.css">
   <link rel="stylesheet" href="./../src/media.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,12 +21,27 @@
 </head>
 
 <body>
-  <div class="hero">
-    <div class="down up-down-an">
-      <a href="#services" class="down-btn"><i class="fa-solid fa-chevron-down"></i></a>
-    </div>
-    <header id="header">
-      <nav class="nav">
+    <header id="service-header">
+      <div class="top-nav">
+        <div class="left">
+          <a href="tel:+91 9557106876"><i class="fa-solid fa-phone"></i> +91 9557106876</a>
+          &nbsp;
+          /
+          <a href="tel:+91 8777533490">8777533490</a>
+          &nbsp;
+          /
+          <a href="tel:+91 9875405470">9875405470</a>
+        </div>
+        <div class="right">
+          <ul class="social">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="mailto:services@indomitechgroup.com"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="service-nav nav">
         <div class="logo">
           <img src="./../src/img/logo.png" alt="" width="65px">
           <span class="logo-text">Indomi<span class="heighlight">tech</span></span>
@@ -38,27 +56,11 @@
             <li class="nav-item"><a class="nav-link" href="#services">What we do</a></li>
             <li class="nav-item"><a class="nav-link" href="./career.html">Career</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Study</a></li>
+            <li class="nav-item"><a class="nav-link study-btn" href="#">Study</a></li>
           </ul>
         </div>
       </nav>
-      <div class="content">
-        <div class="header-content-text">
-          <h1> <span class=""></span>Building the Future with<br><span class="heighlight-text service-txt">Tech &
-              Software.</span></h1>
-          <div class="qoute">
-            <p class="msg">
-              “Innovation is taking two things that exist and putting them together in a new way.“</p>
-            <p class="author">
-              - Tom Freston
-            </p>
-          </div>
-        </div>
-      </div>
     </header>
-    <video autoplay loop muted plays-inline class="header-vid">
-      <source src="./../src/video/services-v.mp4">
-    </video>
   </div>
 
 
@@ -67,7 +69,7 @@
     <div class="service-content">
       <div class="row">
         <div class="col service-android-img service-img">
-          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/android.png"
+          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/android-sm.png"
             width="60%" alt="">
         </div>
         <div class="col service-android-text service-text">
@@ -101,7 +103,7 @@
       </div>
       <div class="row">
         <div class="col service-graphics-img service-img">
-          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/graphics.png" width="80%" alt="">
+          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/graphics-sm.png" width="80%" alt="">
         </div>
         <div class="col service-graphics-text service-text">
           <h2 class="service-heading">Graphic Design</h2>
@@ -130,17 +132,17 @@
           </div>
         </div>
         <div class="col service-web-img service-img">
-          <img data-aos="fade-left" data-aos-duration="500" data-aos-once="true" src="./../src/img/web.png" width="80%" alt="">
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-once="true" src="./../src/img/desktop-sm.png" width="80%" alt="">
         </div>
       </div>
 
       <div class="row">
         <div class="col service-graphics-img service-img">
-          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/graphics.png" width="80%" alt="">
+          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/ios-sm.png" width="80%" alt="">
         </div>
         <div class="col service-graphics-text service-text">
-          <h2 class="service-heading">Graphic Design</h2>
-          <h4 class="service-sub-heading">Graphic Design Build your unique design.</h4>
+          <h2 class="service-heading">IOS Development</h2>
+          <h4 class="service-sub-heading">In my opinion, the future of mobile is the future of everything.</h4>
           <div class="service-para">Graphic Design Build your unique design. A Graphic designer is an artist who creates
             visual text and imagery. They design creative content for online campaigns, print ads, websites, and even
             videos.</div>
@@ -150,20 +152,62 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col left-side">
+          <div class="service-web-text service-text">
+            <h2 class="service-heading">UI UX Design</h2>
+            <h4 class="service-sub-heading">Turning ideas into web sites.</h4>
+            <div class="service-para">Every business needs to be online. Stand out from the competition and make your
+              brand look its best with stunning web page design. With our web design services, you’ll get thoughtful,
+              effective web page designs created by professionals.</div>
+            <div class="btns">
+              <button class="btn btn-appointment">Appointment</button>
+              <button class="btn btn-work">Our Work</button>
+            </div>
+          </div>
+        </div>
+        <div class="col service-web-img service-img">
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-once="true" src="./../src/img/uiux.png" width="80%" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col service-graphics-img service-img">
+          <img data-aos="fade-right" data-aos-duration="500" data-aos-once="true" src="./../src/img/3d.png" width="80%" alt="">
+        </div>
+        <div class="col service-graphics-text service-text">
+          <h2 class="service-heading">3D Design</h2>
+          <h4 class="service-sub-heading">In my opinion, the future of mobile is the future of everything.</h4>
+          <div class="service-para">Graphic Design Build your unique design. A Graphic designer is an artist who creates
+            visual text and imagery. They design creative content for online campaigns, print ads, websites, and even
+            videos.</div>
+          <div class="btns">
+            <button class="btn btn-appointment">Appointment</button>
+            <button class="btn btn-work">Our Work</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col left-side">
+          <div class="service-web-text service-text">
+            <h2 class="service-heading">Digital Marketing</h2>
+            <h4 class="service-sub-heading">Turning ideas into web sites.</h4>
+            <div class="service-para">Every business needs to be online. Stand out from the competition and make your
+              brand look its best with stunning web page design. With our web design services, you’ll get thoughtful,
+              effective web page designs created by professionals.</div>
+            <div class="btns">
+              <button class="btn btn-appointment">Appointment</button>
+              <button class="btn btn-work">Our Work</button>
+            </div>
+          </div>
+        </div>
+        <div class="col service-web-img service-img">
+          <img data-aos="fade-left" data-aos-duration="500" data-aos-once="true" src="./../src/img/digital-marketing-sm.png" width="80%" alt="">
+        </div>
+      </div>
+      
     </div>
   </section>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    var typing = new Typed(".service-txt", {
-      strings: ["", "Web Development.", "App Development.", "Graphics Designing.", "Freelance Work.", "Video Editing."],
-      startDelay: 3000,
-      typeSpeed: 60,
-      backDelay: 2000,
-      backSpeed: 60,
-      loop: true,
-    });
-  </script>
 </body>
 
 </html>
