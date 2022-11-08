@@ -525,17 +525,17 @@ section {
   opacity: 0.8;
 }
 .btn-appointment {
-  background-color: var(--green);
-  color: var(--dark-green);
   font-weight: 500;
   border-radius: 0 10px 0 0;
+  background-color: var(--orange);
+  color: var(--white);
 }
-.btn-work {
+/* .btn-work {
   background-color: var(--orange);
   color: var(--white);
   font-weight: 500;
   border-radius: 0 10px 0 0;
-}
+} */
 /* index.html */
 .all_services {
   display: flex;
