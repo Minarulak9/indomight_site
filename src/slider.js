@@ -94,9 +94,7 @@ class Slider {
     const sd = this.currentX - this.lastX
     const acc = sd / window.innerWidth
     let velo =+ acc
-    
     this.sliderInner.style.transform = `translate3d(${this.lastX}px, 0, 0) skewX(${velo * this.opts.velocity}deg)`
-
     this.requestAnimationFrame()
   }
   
@@ -183,15 +181,3 @@ class Slider {
 const slider = new Slider()
 slider.init()
 
-
-
-// const sliderContainer = document.querySelector('.js-slider__inner');
-
-// const prevBtn = document.querySelector('.prev-btn');
-// const nextbtn = document.querySelector('.next-btn');
-// prevBtn.addEventListener('click',()=>{
-//     // translate3d(-753.8px, 0px, 0px) skewX(-0.0371296deg)
-//     let translate = sliderContainer.style.transform;
-    
-//     console.log(translate);
-// })
