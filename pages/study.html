@@ -1,29 +1,76 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100%;
-            height: 80vh;
-            display: grid;
-            place-items: center;
-            text-align: center;
-        }
-    </style>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Study</title>
+  <link rel="stylesheet" href="./../src/style.css">
+  <link rel="stylesheet" href="./../src/media.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./../src/app.js" defer></script>
+  <link rel="shortcut icon" href="./../src/img/fav.png" type="image/x-icon">
+  <style>
+    .no-job {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="content">
-        <img src="./../src/img/coming_soon.png" width="300px" alt="">
-        <h1>Comming soon...</h1>
+  <header id="career-header">
+    <div class="top-nav">
+      <div class="left">
+        <a href="tel:+91 9557106876"><i class="fa-solid fa-phone"></i> +91 9557106876</a>
+        &nbsp;
+        /
+        <a href="tel:+91 8777533490">8777533490</a>
+        &nbsp;
+        /
+        <a href="tel:+91 9875405470">9875405470</a>
+      </div>
+      <div class="right">
+        <ul class="social">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="mailto:services@indomitechgroup.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
     </div>
+    <nav class="nav service-nav">
+      <div class="logo">
+        <img src="./../src/img/logo.png" alt="" width="65px">
+        <span class="logo-text">Indomi<span class="heighlight">tech</span></span>
+      </div>
+      <div class="nav-toggler d-none">
+        <button class="nav-toggler-btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div class="menu">
+        <ul class="nav-links">
+          <li class="nav-item"><a class="nav-link" href="./../index.html">Indomitech</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./services.html">What we do</a></li>
+          <li class="nav-item"><a class="nav-link" href="./career.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link study-btn" href="./study.html">Study</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="no-job">
+    <div class="content">
+      <img src="./../src/img/coming_soon.png" width="300px" alt="">
+      <h1>Coming soon...</h1>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -906,7 +906,7 @@ section {
   gap: 2rem;
 }
 .footer-details .address{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight:300;
   line-height: 1.4;
 }
@@ -939,9 +939,7 @@ section {
   font-size: 1.2rem;
   padding: 1rem;
 }
-.footer-content .links li{
-  
-}
+
 .footer-content .links li a{
   color: var(--light);
   text-decoration: none;
@@ -954,7 +952,7 @@ section {
   justify-self: center;
 }
 .footer-content .additional a{
-  padding:30px 50px;
+  padding: 10px 30px;
   background-color: var(--orange);
   color: white;
   text-decoration: none;
