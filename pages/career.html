@@ -65,22 +65,23 @@
       </div>
     </nav>
   </header>
-  <div class="no-job">
+  <!-- <div class="no-job">
     <div class="content">
       <img src="./../src/img/no-blog.png" width="300px" alt="">
       <h1>No Opening</h1>
     </div>
-  </div>
-  <!-- 
+  </div> -->
+
   <section id="career">
     <div class="section_heading">Join <span class="hightlight">Us</span></div>
     <div class="career-content">
       <div class="all_jobs">
-        <a href="./pages/services.html" class="box">
+        <div class="box">
           <div class="img"><img src="./../src/img/app-devlopment-sm.jpg" alt=""></div>
           <div class="details">
             <div class="job-title">App Developer</div>
-            <div class="desciption">We are looking for a qualified Application Developer to design and code functional programs and applications. You will work as part of a team and individually with little supervision.</div>
+            <div class="desciption">We are looking for a qualified Application Developer to design and code functional
+              programs and applications. You will work as part of a team and individually with little supervision.</div>
             <div class="required-skills">
               <h3>Required Skills</h3>
               <ul class="skill-set">
@@ -90,14 +91,15 @@
                 <li>Basic of Backend</li>
               </ul>
             </div>
-            <div class="apply-btn"><button>Apply Now</button></div>
+            <div class="apply-btn"><button class="job-apply">Apply Now</button></div>
           </div>
-        </a>
-        <a href="./pages/services.html" class="box">
+        </div>
+        <div class="box">
           <div class="img"><img src="./../src/img/web-devlopment.jpg" alt=""></div>
           <div class="details">
             <div class="job-title">Web Developer</div>
-            <div class="desciption">We are looking for a qualified Application Developer to design and code functional programs and applications. You will work as part of a team and individually with little supervision.</div>
+            <div class="desciption">We are looking for a qualified Application Developer to design and code functional
+              programs and applications. You will work as part of a team and individually with little supervision.</div>
             <div class="required-skills">
               <h3>Required Skills</h3>
               <ul class="skill-set">
@@ -109,14 +111,15 @@
                 <li>Mysql</li>
               </ul>
             </div>
-            <div class="apply-btn"><button>Apply Now</button></div>
+            <div class="apply-btn"><button class="job-apply">Apply Now</button></div>
           </div>
-        </a>
-        <a href="./pages/services.html" class="box">
+        </div>
+        <div class="box">
           <div class="img"><img src="./../src/img/graphics-designer.jpg" alt=""></div>
           <div class="details">
             <div class="job-title">Graphics Designer</div>
-            <div class="desciption">We are looking for a qualified Application Developer to design and code functional programs and applications. You will work as part of a team and individually with little supervision.</div>
+            <div class="desciption">We are looking for a qualified Application Developer to design and code functional
+              programs and applications. You will work as part of a team and individually with little supervision.</div>
             <div class="required-skills">
               <h3>Required Skills</h3>
               <ul class="skill-set">
@@ -126,15 +129,47 @@
                 <li>Basic of Backend</li>
               </ul>
             </div>
-            <div class="apply-btn"><button>Apply Now</button></div>
+            <div class="apply-btn"><button class="job-apply">Apply Now</button></div>
           </div>
-        </a>
-        
-      </div>
+        </div>
 
+      </div>
     </div>
-  </section> -->
+  </section>
+  <div class="appoinment-popup job-popup">
+    <h2 class="text-center">Apply Job</h2>
+    <form action="" class="appointment-form">
+      <input type="text" placeholder="Tell us your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="text" placeholder="Phone Number">
+      <div class="cv">
+        <label for="cv">CV</label>
+        <input type="file" id="cv" placeholder="Select you CV">
+      </div>
+      <input type="submit" value="Apply" class="submit-job">
+    </form>
+  </div>
+  <div class="overlay">
+
+  </div>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+    const careerContent = document.querySelector(".career-content");
+    const popup = document.querySelector(".appoinment-popup");
+    const overlay = document.querySelector(".overlay");
+    careerContent.addEventListener("click", (e) => {
+      if (e.target.classList.contains("job-apply")) {
+        popup.classList.add("active");
+        overlay.classList.add('active')
+      }
+    });
+    overlay.addEventListener('click', () => {
+      popup.classList.remove('active');
+      overlay.classList.remove('active');
+    })
+
+  </script>
 </body>
 
 </html>

@@ -178,4 +178,8 @@
     #testimonials{
         padding: .4rem;
     }
+    .appoinment-popup.active{
+        width: 85%;
+        padding: 1rem;
+    }
 }
