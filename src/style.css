@@ -1086,3 +1086,73 @@ section {
   display: none;
 }
 
+.faq-header{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./img/faq.png') no-repeat center center/cover;
+  color:var(--blue);
+}
+.faq-details{
+  /* min-height: 950px; */
+  background: linear-gradient(#dcf0ff,white);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.custom-shape-divider-top-1668112253 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1668112253 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-top-1668112253 .shape-fill {
+  fill: #a9daff;
+}
+.gap{
+  height: 120px;
+  width: 100%;
+}
+.faqs{
+  max-width: 750px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 5px 5px 10px -8px;
+}
+.faqs ul{
+  list-style-type: none;
+}
+
+.faqs ul li .que::before{ 
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: url('./img/rec.png') no-repeat center center/cover;
+}
+.faqs ul li .que{ 
+  padding: 15px 0;
+  background-color: rgb(227, 255, 236);
+  display: block;
+  padding:15px 40px;
+  position: relative;
+}
+.faqs ul li .ans{ 
+  display: block;
+  padding: 15px 40px;
+}
